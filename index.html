@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Police Stopper: Reduce Unnecessary Police Stops</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+		<link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/media-queries.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+    </head>
+
+    <body>
+    
+        <!-- Loader -->
+    	<div class="loader">
+    		<div class="loader-img"></div>
+    	</div>
+		
+		<!-- Top menu -->
+		<nav>
+			<a class="scroll-link" href="#top-content">Top</a>
+			<a class="scroll-link" href="#what-we-do">Summary</a>
+			<a class="scroll-link" href="#process">Data</a>
+			<a class="scroll-link" href="#portfolio">The Tool</a>
+			<a class="scroll-link" href="#testimonials">Evidence It Works</a>
+			<a class="scroll-link" href="#team">How It Works</a>
+			<a class="scroll-link" href="#contact">About Me</a>
+			<div class="hide-menu">
+				<a href=""><i class="fa fa-bars"></i></a>
+			</div>
+		</nav>
+		<div class="show-menu">
+			<a href=""><i class="fa fa-bars"></i></a>
+		</div>
+		
+        <!-- Top content -->
+        <div class="top-content">
+            <div class="top-content-text wow fadeInUp">
+            	<div class="divider-2"><span></span></div>
+            	<h1><a href="">POLICE STOPPER</a></h1>
+            	<div class="divider-2"><span></span></div>
+            	<p>Using Machine Learning to Reduce Unnecessary Police Stops</p>
+            </div>
+        </div>
+        
+        <!-- What we do -->
+        <div class="what-we-do-container section-container">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-sm-12 what-we-do section-description wow fadeIn">
+	                    <h2>Summary</h2>
+	                    <div class="divider-1 wow fadeInUp"><span></span></div>
+	                    <p>
+	                    	<!--Text goes here-->
+	                    </p>
+	                </div>
+	            </div>
+	            <div class="row">
+                	<div class="col-sm-4 what-we-do-box wow fadeInUp">
+	                	<div class="what-we-do-box-icon"><i class="fa fa-pencil"></i></div>
+	                    <h3>Data</h3>
+	                    <p>New York City releases data about all police stops. The stops since 2014 (when Stop and Frisk ended) are especialy relevant.</p>
+                    </div>
+                    <div class="col-sm-4 what-we-do-box wow fadeInDown">
+	                	<div class="what-we-do-box-icon"><i class="fa fa-gears"></i></div>
+	                    <h3>Model</h3>
+	                    <p>An extreme gradient boosting model takes features of each stop, the suspect and the officer to predict whether the stop is likely to result in an arrest (and therefore whether it is warranted).</p>
+                    </div>
+                    <div class="col-sm-4 what-we-do-box wow fadeInUp">
+	                	<div class="what-we-do-box-icon"><i class="fa fa-twitter"></i></div>
+	                    <h3>Results</h3>
+	                    <p>The model reduces the number of unwarranted stops by 75% while reducing the number of arrests by less than 20%.</p>
+                    </div>
+	            </div>
+	        </div>
+        </div>
+        
+        <!-- Our process -->
+        <div class="block-1-container process-container section-container section-container-gray">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-sm-12 block-1 section-description wow fadeIn">
+	                	<h2>What does the data say?</h2>
+	                    <div class="divider-1 wow fadeInUp"><span></span></div>
+	                    <p>Even after Stop and Frisk ended, most stops do not end in arrests.
+	                    </p>
+	                </div>
+	            </div>
+	            <div class="row">
+	            	<div class="col-sm-6 block-1-left wow fadeInLeft">
+	            		 
+	            	</div>
+	            	<div class="col-sm-6 block-1-right wow fadeInUp">
+	            		<h3>Some places are better than others</h3>
+	            		<p>Although as many as 40% of stops end in arrests in some areas of Manhattan, that proportion is near 10% all across Brooklyn.</p>
+	            		<iframe src="assets/map.html" style="border: none; width: 100%; height: 680px; max-width: 100%;"></iframe> 
+	            		<h3>What about race?</h3>
+	            		<p>Although the proportion of stops that end up in arrests is similar across groups, about 80% of people who are stopped are Black or Hispanic. Scroll over the plot below to see proportions.</p>
+	            		<iframe src="assets/byrace.html" style="border: none; width: 100%; height: 350px"></iframe> 
+	            	</div>
+	            </div>
+	        </div>
+        </div>
+        
+        <!-- Clients -->
+        
+        <!-- Counters -->
+        <div class="counters-container section-container section-container-full-bg">
+        	<div class="container">
+        		<div class="row">
+	            	<div class="col-sm-3 counter-box wow fadeInUp">
+                    	<h4>22,563</h4>
+                    	<p>Total stops</p>
+	            	</div>
+	            	<div class="col-sm-3 counter-box wow fadeInDown">
+                    	<h4>18,595</h4>
+                    	<p>Unnecessary stops</p>
+	            	</div>
+	            	<div class="col-sm-3 counter-box wow fadeInUp">
+                    	<h4>3,968</h4>
+                    	<p>Arrests</p>
+	            	</div>
+	            	<div class="col-sm-3 counter-box wow fadeInDown">
+                    	<h4>949</h4>
+                    	<p>Stops due only to suspect's clothing</p>
+	            	</div>
+	            </div>
+        	</div>
+        </div>
+        
+        <!-- Portfolio -->
+        <div class="portfolio-container section-container">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-sm-12 portfolio section-description wow fadeIn">
+	                	<h2>The Tool</h2>
+	                    <div class="divider-1 wow fadeInUp"><span></span></div>
+	                    <p>
+	                    	Given some features of the subject and the stop, the tool can accurately predict the likelihood of arrest. The predictions below are for a uniformed officer stopping a suspect outdoors at 10pm in the 106th precinct, these features can be changed in the full model.
+	                    </p>
+	                </div>
+	            </div>
+	            <div class="row">
+	            	<iframe src="https://asinayev.shinyapps.io/small_model/" style="border: none; width: 100%; height: 680px"></iframe> 
+	            </div>
+	        </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="testimonials-container section-container section-container-gray">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-sm-12 testimonials section-description wow fadeInUp">
+	                    <h2>Evidence It Works</h2>
+	                    <div class="divider-1 wow fadeInUp"><span></span></div>
+	                    <div class="testimonial-active"></div>
+	                    <div class="testimonial-single">
+	                    	<p>
+	                    		The model was able to reduce the proportions of innocent people being stopped significantly, while keeping law enforcement effective. The results were consistent across races (the model did not reduce stops more in whites than in other groups).
+	                    		<br>
+	                    		<img src="assets/raceresults.jpeg">
+	                    	</p>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+        </div>
+        
+        <!-- Our motto -->
+        <div class="our-motto-container section-container section-container-full-bg">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-sm-12 our-motto section-description wow fadeInLeftBig">
+	                    <p>
+	                    	"We can live in a world where the police don't kill people
+	                    	by <b>limiting police interventions</b>, improving community interactions, and ensuring accountability."
+	                    </p>
+	                    <div class="our-motto-author">Campaign Zero</div>
+	                </div>
+	            </div>
+	        </div>
+        </div>
+        
+        <!-- The team -->
+        <div class="team-container section-container">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-sm-12 team section-description wow fadeIn">
+	                    <h2>How It Works</h2>
+	                    <div class="divider-1 wow fadeInUp"><span></span></div>
+	                    <p>
+	                    	 <img src="assets/model diagram.jpeg"">
+	                    </p>
+	                    <div class="divider-1 wow fadeInUp"><span></span></div>
+        				<h3>Most Important Features</h3>
+						<div class="row">
+							<div class="col-sm-12 portfolio-masonry">
+						        <div class="portfolio-box bad good">
+						        	<img src="assets/img/portfolio/location.jpg" alt="" data-at2x="assets/img/portfolio/location.jpg">
+						        	<div class="portfolio-box-text-container">
+						        		<div class="portfolio-box-text">
+						        			<p><a href="#">Location</a></p>
+						        		</div>
+						        	</div>
+						        </div>
+						        <div class="portfolio-box bad good">
+						        	<img src="assets/img/portfolio/time.jpg" alt="" data-at2x="assets/img/portfolio/time.jpg">
+						        	<div class="portfolio-box-text-container">
+						        		<div class="portfolio-box-text">
+						        			<p><a href="#">Time of Stop</a></p>
+						        		</div>
+						        	</div>
+						        </div>
+						        <div class="portfolio-box bad good">
+						        	<img src="assets/img/portfolio/age.jpg" alt="" data-at2x="assets/img/portfolio/age.jpg">
+						        	<div class="portfolio-box-text-container">
+						        		<div class="portfolio-box-text">
+						        			<p><a href="#">Age of Suspect</a></p>
+						        		</div>
+						        	</div>
+						        </div>
+						        <div class="portfolio-box bad good">
+						        	<img src="assets/img/portfolio/precinct.jpg" alt="" data-at2x="assets/img/portfolio/precinct.jpg">
+						        	<div class="portfolio-box-text-container">
+						        		<div class="portfolio-box-text">
+						        			<p><a href="#">Precinct</a></p>
+						        		</div>
+						        	</div>
+						        </div>
+						        <div class="portfolio-box bad good">
+						        	<img src="assets/img/portfolio/transit.jpg" alt="" data-at2x="assets/img/portfolio/transit.jpg">
+						        	<div class="portfolio-box-text-container">
+						        		<div class="portfolio-box-text">
+						        			<p><a href="#">Stop in Transit or Housing Authority</a></p>
+						        		</div>
+						        	</div>
+						        </div>
+						        <div class="portfolio-box bad good">
+						        	<img src="assets/img/portfolio/weight.jpg" alt="" data-at2x="assets/img/portfolio/weight.jpg/">
+						        	<div class="portfolio-box-text-container">
+						        		<div class="portfolio-box-text">
+						        			<p><a href="#">Weight of Suspect</a></p>
+						        		</div>
+						        	</div>
+						        </div>
+						        <div class="portfolio-box bad good">
+						        	<img src="assets/img/portfolio/indoors.jpg" alt="" data-at2x="assets/img/portfolio/indoors.jpg">
+						        	<div class="portfolio-box-text-container">
+						        		<div class="portfolio-box-text">
+						        			<p><a href="#">Stop Indoors or Out</a></p>
+						        		</div>
+						        	</div>
+						        </div>
+						        <div class="portfolio-box bad good">
+						        	<img src="assets/img/portfolio/period.jpg" alt="" data-at2x="assets/img/portfolio/period.jpg">
+						        	<div class="portfolio-box-text-container">
+						        		<div class="portfolio-box-text">
+						        			<p><a href="#">Period of Observation</a></p>
+						        		</div>
+						        	</div>
+						        </div>
+						        <div class="portfolio-box bad good">
+						        	<img src="assets/img/portfolio/uniform.jpg" alt="" data-at2x="assets/img/portfolio/uniform.jpg">
+						        	<div class="portfolio-box-text-container">
+						        		<div class="portfolio-box-text">
+						        			<p><a href="#">Officer Wearing Uniform</a></p>
+						        		</div>
+						        	</div>
+						        </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p></p>
+                <div class="divider-1 wow fadeInUp"><span></span></div>	
+        		<h3>Captures Non-linear Relationships</h3>
+                    <p>
+                    	 The model was successful because it captured non-linear relationships in the data. For example, the relationship between time and arrests was highly non-linear. Below, you can see that the model captured that relationship effectively. The fits are from a cross-validated sample, so the model is not just fitting noise.
+                    	 <iframe src="assets/time_predictions.html" style="border: none; width: 100%; height: 400px"></iframe> 
+                    </p>
+
+	        </div>
+        </div>
+
+        <div class="new-container section-container section-container-gray">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-sm-12 testimonials2 section-description wow fadeInUp">
+	                    <h2>Qualitative Insights</h2>
+	                    <div class="divider-1 wow fadeInUp"><span></span></div>
+	                    
+	                    	<p>
+	                    		When a police officer gives a reason to stop a suspect, the odds of an arrest when that reason is used should be higher than when it isn't used. A classification of reasons by this criterion is provided below.
+	                    	</p>
+	                    </div>
+	                </div>
+
+    	            <div class="row">
+		            	<div class="col-sm-12 portfolio-filters wow fadeInUp">
+		            		<a href="#" class="filter-all active">All</a> / 
+		            		<a href="#" class="filter-good">Good Reasons</a> / 
+		            		<a href="#" class="filter-bad">Bad Reasons</a> / 
+		            	</div>
+		            </div>
+		            <div class="row">
+			            	<div class="col-sm-12 portfolio-masonry">
+					            <div class="portfolio-box bad">
+				                	<img src="assets/img/testimonials/ongoing_investigation.jpg" alt="" data-at2x="assets/img/testimonials/ongoing_investigation.jpg">
+				                	<div class="portfolio-box-text-container">
+				                		<div class="portfolio-box-text">
+				                			<p><a href="#">ongoing investigation</a></p>
+				                		</div>
+				                	</div>
+				                </div>
+
+					            <div class="portfolio-box bad">
+				                	<img src="assets/img/testimonials/actions_of_engaging_in_a_violent_crime.jpg" alt="" data-at2x="assets/img/testimonials/actions_of_engaging_in_a_violent_crime.jpg">
+				                	<div class="portfolio-box-text-container">
+				                		<div class="portfolio-box-text">
+				                			<p><a href="#">actions of engaging in a violent crime</a></p>
+				                		</div>
+				                	</div>
+				                </div>
+
+					            <div class="portfolio-box bad">
+				                	<img src="assets/img/testimonials/inappropriate_attire_for_season.jpg" alt="" data-at2x="assets/img/testimonials/inappropriate_attire_for_season.jpg">
+				                	<div class="portfolio-box-text-container">
+				                		<div class="portfolio-box-text">
+				                			<p><a href="#">inappropriate attire for season</a></p>
+				                		</div>
+				                	</div>
+				                </div>
+
+					            <div class="portfolio-box bad">
+				                	<img src="assets/img/testimonials/wearing_clothes_commonly_used_in_a_crime.jpg" alt="" data-at2x="assets/img/testimonials/wearing_clothes_commonly_used_in_a_crime.jpg">
+				                	<div class="portfolio-box-text-container">
+				                		<div class="portfolio-box-text">
+				                			<p><a href="#">wearing clothes commonly used in a crime</a></p>
+				                		</div>
+				                	</div>
+				                </div>
+
+					            <div class="portfolio-box bad">
+				                	<img src="assets/img/testimonials/acting_as_a_lookout.jpg" alt="" data-at2x="assets/img/testimonials/acting_as_a_lookout.jpg">
+				                	<div class="portfolio-box-text-container">
+				                		<div class="portfolio-box-text">
+				                			<p><a href="#">acting as a lookout</a></p>
+				                		</div>
+				                	</div>
+				                </div>
+
+					            <div class="portfolio-box good">
+				                	<img src="assets/img/testimonials/report_by_victim.jpg" alt="" data-at2x="assets/img/testimonials/report_by_victim.jpg">
+				                	<div class="portfolio-box-text-container">
+				                		<div class="portfolio-box-text">
+				                			<p><a href="#">report by victim</a></p>
+				                		</div>
+				                	</div>
+				                </div>
+
+					            <div class="portfolio-box good">
+				                	<img src="assets/img/testimonials/suspicion_of_weapons.jpg" alt="" data-at2x="assets/img/testimonials/suspicion_of_weapons.jpg">
+				                	<div class="portfolio-box-text-container">
+				                		<div class="portfolio-box-text">
+				                			<p><a href="#">suspicion of weapons</a></p>
+				                		</div>
+				                	</div>
+				                </div>
+
+					            <div class="portfolio-box good">
+				                	<img src="assets/img/testimonials/proximity_to_scene_of_offense.jpg" alt="" data-at2x="assets/img/testimonials/proximity_to_scene_of_offense.jpg">
+				                	<div class="portfolio-box-text-container">
+				                		<div class="portfolio-box-text">
+				                			<p><a href="#">proximity to scene of offense</a></p>
+				                		</div>
+				                	</div>
+				                </div>
+
+					            <div class="portfolio-box good">
+				                	<img src="assets/img/testimonials/carrying_suspicious_object.jpg" alt="" data-at2x="assets/img/testimonials/carrying_suspicious_object.jpg">
+				                	<div class="portfolio-box-text-container">
+				                		<div class="portfolio-box-text">
+				                			<p><a href="#">carrying suspicious object</a></p>
+				                		</div>
+				                	</div>
+				                </div>
+				            </div>
+	            </div>
+
+				            </div>
+	            </div>
+
+
+
+	        </div>
+        </div>
+
+        <div class="team-container section-container">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-sm-12 team section-description wow fadeIn">
+	                    <h2>About Me</h2>
+	                    <div class="divider-1 wow fadeInUp"><span></span></div>
+	                    <p>
+	                    My name is Aleksandr Sinayev. I hold a PhD in Quantitative Psychology and have done several years of freelance statistical consulting. I like using math and statistics for finding clean solutions to sticky problems. <a href="http://asinayev.github.io">Learn more about me here!</a>
+	                    </p>
+	                </div>
+	            </div>
+	        </div>
+        </div>
+        
+        <!-- Scroll to top -->
+        <div class="section-container section-container-gray">
+	        <div class="container">
+		        <div class="row">
+		        	<div class="col-sm-12">
+		        		<div class="scroll-to-top">
+		        			<a class="scroll-link" href="#top-content"><i class="fa fa-chevron-up"></i></a>
+		        		</div>
+		        	</div>
+		        </div>
+	        </div>
+        </div>
+                
+        <!-- Footer -->
+        <footer>
+	        <div class="container">
+	            <div class="row">
+                    <div class="col-sm-5 footer-social">
+                    </div>
+	            </div>
+	        </div>
+        </footer>
+        
+
+        <!-- Javascript -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/retina-1.1.0.min.js"></script>
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="assets/js/masonry.pkgd.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+
+    </body>
+
+</html>
